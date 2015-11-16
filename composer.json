@@ -1,0 +1,31 @@
+{
+  "name": "hieu-le/body-classes",
+  "description": "Add classes to the body element dynamically.",
+  "keywords": [
+    "body",
+    "classes",
+    "dynamic"
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^4.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hieu Le",
+      "email": "letrunghieu.cse09@gmail.com",
+      "homepage": "https://www.hieule.info"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "HieuLe\\BodyClasses\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "prefer-stable": true
+}
