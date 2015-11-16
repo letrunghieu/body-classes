@@ -17,14 +17,14 @@ class BodyTest extends PHPUnit_Framework_TestCase
     public function testAddClassesAsString()
     {
         $this->_obj->addClasses('foo');
-        $this->assertEquals(['foo'], $this->_obj->getClassArray());
+        $this->assertEquals(array('foo'), $this->_obj->getClassArray());
         $this->assertEquals('foo', $this->_obj->getClasses());
     }
 
     public function testAddClassesAsArray()
     {
-        $this->_obj->addClasses(['bar', 'baz']);
-        $this->assertEquals(['bar', 'baz'], $this->_obj->getClassArray());
+        $this->_obj->addClasses(array('bar', 'baz'));
+        $this->assertEquals(array('bar', 'baz'), $this->_obj->getClassArray());
         $this->assertEquals('bar baz', $this->_obj->getClasses());
     }
 
@@ -32,9 +32,9 @@ class BodyTest extends PHPUnit_Framework_TestCase
     {
         $this->_obj->addClasses('foo');
         $this->_obj->addClasses('bar');
-        $this->_obj->addClasses(['foo']);
+        $this->_obj->addClasses(array('foo'));
 
-        $this->assertEquals(['foo', 'bar'], $this->_obj->getClassArray());
+        $this->assertEquals(array('foo', 'bar'), $this->_obj->getClassArray());
         $this->assertEquals('foo bar', $this->_obj->getClasses());
     }
 }
