@@ -9,7 +9,7 @@ class Body
      *
      * @var array
      */
-    protected $classes = [];
+    protected $classes = array();
 
     /**
      * Append new class
@@ -19,7 +19,7 @@ class Body
     public function addClasses($classes)
     {
         if (!is_array($classes)) {
-            $classes = [$classes];
+            $classes = array($classes);
         }
 
         foreach ($classes as $class) {
